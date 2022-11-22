@@ -15,6 +15,9 @@ function pyramid(height) {
   let output = [];
   let str = "";
 
+  if (typeof height !== "number") {
+    return "input needs to be a number";
+  }
   for (let i = 1; i <= height; i++) {
     for (let j = 1; j <= 2 * i - 1; j++) {
       str += "*";
